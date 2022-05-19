@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-header">
+        <h1>BOOKSHELF APPS</h1>
+    </header>
+    <main>
+        <section class="main-menu">
+            <div class="main-header">
+                <h2 class="salam">Hai Reader!</h2>
+                <h4 class="keterangan">Selamat Datang di Aplikasi BookShelf</h4>
+                <!-- <img class="tambah" src="asset/add-icon.png"> -->
+                <div class="tambah">+</div>
+            </div>
+
+            <div class="book-form">
+                <h2>Masukkan Buku Baru</h2>
+                <table>
+                    <form action="#" id="inputBook">
+                        <tr class="input">
+                            <th><label class="label-daftar" for="inputBookTitle">Judul</label></th> 
+                            <th><input class="input-title" id="inputBookTitle" type="text" required></th>
+                        </tr>
+                        <tr class="input">
+                            <th><label class="label-daftar" for="inputBookAuthor">Penulis</label></th>
+                            <th><input class="input-title" id="inputBookAuthor" type="text" required></th>
+                        </th>
+                        <tr class="input">
+                            <th><label class="label-daftar" for="inputBookYear">Tahun</label></th>
+                            <th><input class="input-title" id="inputBookYear" type="number" required></th>
+                        </tr>
+                        <tr class="input_inline">
+                            <td colspan="2"><input id="inputBookIsComplete" type="checkbox">
+                            <label for="inputBookIsComplete">Langsung Baca</label></td>
+                            <tr></tr>
+                        </tr>
+                        <tr>
+                        <td colspan="2"><button id="bookSubmit" type="submit">Simpan</button>
+                        <button id="cancel" type="submit">Cancel</button></td>
+                        <td></td>
+                        </tr>
+                    </form>
+                </table>    
+            </div>
+
+            <div class="menu">
+                <div class="submenu wishlist">
+                    <p>Wishlist</p>
+                    <img src="asset/list.png" alt="">
+                </div>
+                <div class="submenu reading">
+                    <p>Sedang Dibaca</p>
+                    <img src="asset/progress.png" alt="">
+                </div>
+                <div class="submenu finish">
+                    <p>Selesai Dibaca</p>
+                    <img src="asset/check.png" alt="">
+                </div>
+                <div class="submenu menu-cari">
+                    <p>Riwayat Pencarian</p>
+                    <img src="asset/search.png" alt="">
+                </div>
+            </div>
+
+            <div class="cari">
+                <form id="form-cari" action="#">
+                    <input class="ketik-judul" type="search" placeholder="Cari berdasarkan judul">
+                    <button class="cari-judul" type="submit">Cari</button>
+                </form>
+                <div class="tampil-cari"></div>
+            </div>
+
+            <div class="daftar-baca"></div>
+            <div id="diBaca"></div>
+            <div id="sudahBaca"></div>
+
+        </section>
+        
+
+
+
+
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

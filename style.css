@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.top-header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    text-shadow: 5px 5px 12px rgb(44, 38, 38);
+}
+
+h4 {
+    font-size: 18px;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    background-color: rgb(220, 245, 247);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin: 0 auto;
+    font-family: 'Concert One', cursive;
+    font-size: 16px;
+    box-shadow: 5px 5px 12px rgb(148, 144, 144),
+                -5px -5px 12px rgb(148, 144, 144);
+}
+
+.book-form {
+    height: 0;
+    width: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.tampil-form {
+    height: 240px;
+    width: auto;
+    margin: 10px auto;
+    display: block;
+    animation: form .17s;
+}
+
+.input-title {
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.label-daftar {
+    font-size: 17px;
+}
+
+th {
+    padding: 3px;
+}
+
+td > button {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(226, 252, 110);
+    font-family: 'Concert One', cursive;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.main-header > .tambah {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 110px;
+    right: 305px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.tambah:hover {
+    background-color: rgb(163, 190, 221);
+}
+
+.rotasi-tambah {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 100px;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.submenu {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(159, 136, 165);
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.wishlist {
+    background-color: rgb(105, 101, 101);
+}
+
+.reading {
+    background-color: gold;
+}
+
+.finish {
+    background-color: rgb(118, 147, 165);
+}
+
+.menu-cari {
+    background-color: khaki;
+}
+
+.submenu:hover {
+    box-shadow: 3px 3px 10px white;
+}
+
+.submenu > img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50px;
+    bottom: 8px;
+    background-color: transparent;
+}
+
+p {
+    text-align: center;
+    line-height: 50px;
+}
+
+.cari > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    grid-gap: 10px;
+}
+
+.cari > form > input {
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: rgb(248, 249, 250);
+    box-shadow: -3px 3px 15px rgb(138, 167, 168);
+}
+
+input {
+    border: 0;
+}
+
+.cari > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tampil-cari {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.daftar-cari {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.boxCari {
+    width: 650px;
+    height: 120px;
+    background-color: khaki;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.boxWish,
+.cariWish {
+    width: 650px;
+    height: 100px;
+    background-color: rgb(105, 101, 101);
+    margin: 10px auto;
+    border-radius: 20px;
+    color: rgb(247, 248, 241);
+}
+
+.boxReading,
+.cariReading {
+    width: 650px;
+    height: 100px;
+    background-color: gold;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.boxFinish,
+.cariFinish {
+    width: 650px;
+    height: 100px;
+    background-color: rgb(118, 147, 165);
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.isiWish > p,
+.isiReading > p,
+.isiFinish > p,
+.isiCari > p {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+button {
+    border: 0;
+    box-shadow: 3px 3px 15px rgb(139, 150, 153);
+}
+
+button:hover {
+    box-shadow: 3px 3px 15px rgb(1, 18, 22);
+}
+
+.hapus {
+    position: relative;
+    left: 550px;
+    bottom: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.hapusDibaca {
+    position: relative;
+    left: 560px;
+    bottom: 35px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.baca {
+    position: relative;
+    left: 500px;
+    bottom: 80px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.selesai {
+    position: relative;
+    left: 500px;
+    bottom: 75px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.lagi {
+    position: relative;
+    left: 465px;
+    bottom: 80px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(211, 253, 57);
+    cursor: pointer;
+}
+
+
+
+
+
+/* ANIMASI FORM*/
+
+@keyframes form {
+    0% {
+        height: 60px;
+    }
+
+    25% {
+        height: 120px;
+    }
+
+    75% {
+        height: 180px;
+    }
+
+    100% {
+        height: 240px;
+    }
+}
